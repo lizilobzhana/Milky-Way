@@ -48,27 +48,33 @@ class RegistrationFragment : Fragment(R.layout.fragment_registration) {
             if (username.isEmpty()){
                 editTextUsername.error="შეიყვანეთ"
             }
-             else if (email.isEmpty()){
+             if (email.isEmpty()){
                 editTextEmail.error = "შეიყვანეთ იმეილი"
                 return@setOnClickListener
-            }else if (!(email.contains("@"))){
+            }
+            if (!(email.contains("@"))){
                 editTextEmail.error = "იმეილი უნდა შეიცავდეს @ სიმბოლოს"
                 return@setOnClickListener
-            }else if (password.isEmpty()){
+            }
+            if (password.isEmpty()){
                 editTextPassword.error = "შეიყვანეთ პაროლი"
                 return@setOnClickListener
-            }else if (password.length < 9){
+            }
+            if (password.length < 9){
                 editTextPassword.error = "პაროლი უნდა შედგებოდეს არანაკლებ ცხრა სიმბოლოსგან"
                 return@setOnClickListener
-            }else if (!(password.matches("(.*[A-Z].*)".toRegex()))||
+            }
+            if (!(password.matches("(.*[A-Z].*)".toRegex()))||
                 !(password.matches("(.*[0-9].*)".toRegex())) ||
                 !(password.matches("^(?=.*[_.()$&@]).*$".toRegex()))){
                 editTextPassword.error = "პაროლი სუსტია"
                 return@setOnClickListener
-            }else if (passwordAgain != password) {
+            }
+            if (passwordAgain != password) {
                 editTextPasswordAgain.error = "პაროლები არ ემთხვევა ერთმანეთს"
                 return@setOnClickListener
-            }else if (passwordAgain.isEmpty()){
+            }
+            if (passwordAgain.isEmpty()){
                 editTextPasswordAgain.error = "შეიყვანეთ პაროლი განმეორებით"
                 return@setOnClickListener
             }
