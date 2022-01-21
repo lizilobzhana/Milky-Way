@@ -46,6 +46,7 @@ class RecyclerViewAdapter (private val list: List<Planets>) :
         val planets = list[position]
         holder.setData(planets)
 
+
     }
 
     override fun getItemCount() = list.size

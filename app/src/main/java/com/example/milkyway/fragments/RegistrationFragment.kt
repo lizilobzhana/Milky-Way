@@ -14,7 +14,7 @@ import com.example.milkyway.R
 import com.google.firebase.auth.FirebaseAuth
 
 class RegistrationFragment : Fragment(R.layout.fragment_registration) {
-    private lateinit var editTextUsername: EditText
+
     private lateinit var editTextEmail: EditText
     private lateinit var editTextPassword: EditText
     private lateinit var editTextPasswordAgain: EditText
@@ -28,9 +28,10 @@ class RegistrationFragment : Fragment(R.layout.fragment_registration) {
         editTextEmail = view.findViewById(R.id.editTextEmail)
         editTextPassword = view.findViewById(R.id.editTextPassword)
         editTextPasswordAgain = view.findViewById(R.id.editTextPasswordAgain)
-        editTextUsername = view.findViewById(R.id.editTextUsername)
         textViewLogin = view.findViewById(R.id.textViewLogin)
         buttonRegistration = view.findViewById(R.id.buttonRegistration)
+
+
 
         textViewLogin.setOnClickListener{
             val action = RegistrationFragmentDirections.actionRegistrationActivityToLoginActivity()
@@ -39,15 +40,13 @@ class RegistrationFragment : Fragment(R.layout.fragment_registration) {
 
         buttonRegistration.setOnClickListener{
 
-            val username = editTextUsername.text.toString()
+
             val email = editTextEmail.text.toString().trim()
             val password = editTextPassword.text.toString().trim()
             val passwordAgain = editTextPasswordAgain.text.toString().trim()
 
 
-            if (username.isEmpty()){
-                editTextUsername.error="შეიყვანეთ"
-            }
+
              if (email.isEmpty()){
                 editTextEmail.error = "შეიყვანეთ იმეილი"
                 return@setOnClickListener

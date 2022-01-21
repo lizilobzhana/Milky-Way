@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@color/primary">
 
     <LinearLayout
         android:id="@+id/linearLayout7"
@@ -25,20 +25,32 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_person_24" />
 
-        <TextView
+        <EditText
             android:id="@+id/textViewUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_weight="1"
-            android:text="Username"
+            android:hint="Name"
             android:textColor="@color/subtext"
             android:textSize="20sp" />
+        <EditText
+            android:id="@+id/textViewUsername1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:hint="Surname"
+            android:textColor="@color/subtext"
+            android:textSize="20sp" />
+
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -65,4 +77,17 @@
             android:background="@drawable/input_bg"
             android:text="Log out" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/input_bg"
+        android:text="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
