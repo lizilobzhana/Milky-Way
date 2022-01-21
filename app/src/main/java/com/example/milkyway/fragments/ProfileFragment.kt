@@ -25,6 +25,9 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
     private lateinit var buttonSave : Button
     private lateinit var textViewUsername1: EditText
 
+    private val auth = FirebaseAuth.getInstance()
+    private val db = FirebaseDatabase.getInstance().getReference("UserInfo")
+
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -40,17 +43,8 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         buttonSave = view.findViewById(R.id.buttonSave)
 
 
-
-
-
-
-
-
-                logoutListener()
-                changePass()
-
-
-
+        logoutListener()
+        changePass()
 
 
 
@@ -60,6 +54,9 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
 
     }
+
+
+
     private fun logoutListener(){
         buttonLogout.setOnClickListener() {
             FirebaseAuth.getInstance().signOut()
