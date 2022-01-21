@@ -52,16 +52,20 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             if (email.isEmpty()){
                 editTextEmail2.error = "შეიყვანეთ იმეილი"
                 return@setOnClickListener
-            }else if (!(email.contains("@"))){
+            }
+            if (!(email.contains("@"))){
                 editTextEmail2.error = "იმეილი უნდა შეიცავდეს @ სიმბოლოს"
                 return@setOnClickListener
-            }else if (pass.isEmpty()){
+            }
+            if (pass.isEmpty()){
                 editTextPassword2.error = "შეიყვანეთ პაროლი"
                 return@setOnClickListener
-            }else if (pass.length < 9){
+            }
+            if (pass.length < 9){
                 editTextPassword2.error = "პაროლი უნდა შედგებოდეს არანაკლებ ცხრა სიმბოლოსგან"
                 return@setOnClickListener
-            }else if (!(pass.matches("(.*[A-Z].*)".toRegex()))||
+            }
+            if (!(pass.matches("(.*[A-Z].*)".toRegex()))||
                 !(pass.matches("(.*[0-9].*)".toRegex())) ||
                 !(pass.matches("^(?=.*[_.()$&@]).*$".toRegex()))){
                 editTextPassword2.error = "პაროლი სუსტია"

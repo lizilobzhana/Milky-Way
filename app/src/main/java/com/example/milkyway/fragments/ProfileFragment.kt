@@ -15,7 +15,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
     private lateinit var textViewUsername : TextView
     private lateinit var buttonChangePassword2 : Button
     private lateinit var buttonLogout : Button
-    val controller = view?.let { Navigation.findNavController(it) }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -32,6 +32,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         }
 
         buttonChangePassword2.setOnClickListener{
+            val controller = view?.let { Navigation.findNavController(it) }
 
             val action = ProfileFragmentDirections.actionProfileFragmentToChangePasswordFragment()
             controller?.navigate(action)
