@@ -8,7 +8,38 @@
         android:id="@+id/mainFragment"
         android:name="com.example.milkyway.fragments.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_neptuneFragment"
+            app:destination="@id/neptuneFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_moonFragment"
+            app:destination="@id/moonFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mercuryFragment"
+            app:destination="@id/mercuryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_earthFragment"
+            app:destination="@id/earthFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_jupiterFragment"
+            app:destination="@id/jupiterFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_marsFragment"
+            app:destination="@id/marsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_saturnFragment"
+            app:destination="@id/saturnFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_sunFragment"
+            app:destination="@id/sunFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_uranusFragment"
+            app:destination="@id/uranusFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_venusFragment"
+            app:destination="@id/venusFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.milkyway.fragments.ProfileFragment"
@@ -21,9 +52,50 @@
     <fragment
         android:id="@+id/changePasswordFragment"
         android:name="com.example.milkyway.fragments.ChangePasswordFragment"
-        android:label="ChangePasswordFragment" >
+        android:label="ChangePasswordFragment"
+        tools:layout="@layout/fragment_changepassword">
         <action
             android:id="@+id/action_changePasswordFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/earthFragment"
+        android:name="com.example.milkyway.fragments.EarthFragment"
+        android:label="EarthFragment" />
+    <fragment
+        android:id="@+id/jupiterFragment"
+        android:name="com.example.milkyway.fragments.JupiterFragment"
+        android:label="JupiterFragment" />
+    <fragment
+        android:id="@+id/marsFragment"
+        android:name="com.example.milkyway.fragments.MarsFragment"
+        android:label="MarsFragment" />
+    <fragment
+        android:id="@+id/mercuryFragment"
+        android:name="com.example.milkyway.fragments.MercuryFragment"
+        android:label="MercuryFragment" />
+    <fragment
+        android:id="@+id/moonFragment"
+        android:name="com.example.milkyway.fragments.MoonFragment"
+        android:label="MoonFragment" />
+    <fragment
+        android:id="@+id/neptuneFragment"
+        android:name="com.example.milkyway.fragments.NeptuneFragment"
+        android:label="NeptuneFragment" />
+    <fragment
+        android:id="@+id/saturnFragment"
+        android:name="com.example.milkyway.fragments.SaturnFragment"
+        android:label="SaturnFragment" />
+    <fragment
+        android:id="@+id/sunFragment"
+        android:name="com.example.milkyway.fragments.SunFragment"
+        android:label="SunFragment" />
+    <fragment
+        android:id="@+id/uranusFragment"
+        android:name="com.example.milkyway.fragments.UranusFragment"
+        android:label="UranusFragment" />
+    <fragment
+        android:id="@+id/venusFragment"
+        android:name="com.example.milkyway.fragments.VenusFragment"
+        android:label="VenusFragment" />
 </navigation>

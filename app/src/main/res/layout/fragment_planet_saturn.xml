@@ -26,7 +26,7 @@
             android:layout_height="110dp"
             android:layout_gravity="center_horizontal"
             android:elevation="40dp"
-            android:src="@drawable/earth"/>
+            android:src="@drawable/saturn"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -48,7 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="დედამიწა"
+                    android:text="სატურნი"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -84,7 +84,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="4dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="54.6 მლნ კმ"
+                        android:text="1427.0 მლნ კმ"
                         android:textColor="@color/subtext"
                         android:textSize="14sp"
                         />
@@ -99,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="3.711 მ/წ²"
+                        android:text="10.44 მ/წ²"
                         android:textColor="@color/subtext"
                         android:textSize="14sp"
                         />
@@ -131,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Overview"
+                    android:text="შესახებ"
                     android:textAllCaps="true"
                     android:textStyle="bold"
                     android:letterSpacing="0.1"
@@ -151,8 +151,9 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppins_regular"
                     android:letterSpacing="0.1"
+                    android:textColor="@color/white"
                     android:lineSpacingExtra="1dp"
-                    android:text="მარსი მეოთხე პლანეტაა სიშორითა და მერკურის შემდეგ, ზომით ყველაზე მცირე პლანეტა მზის სისტემაში. მას რომაული ომის ღმერთის მარსის სახელი ჰქვია. მარსს მეტსახელად ”წითელ პლანეტასაც” უწოდებენ, მისი ზედაპირის მოწითალო შეფერილობის გამო, რაც მაგემიტის (რკინის ოქსიდის) დიდი რაოდენობითაა გამოწვეული."
+                    android:text="სატურნი სიშორით მეექვსე პლანეტაა მზიდან. ეს გაზის გიგანტი სიდიდით მეორე პლანეტაა მზის სისტემაში იუპიტერის შემდეგ. პლანეტას რომაული ღმერთი სატურნის სახელი ჰქვია. მისი სიმბოლოა ღმერთის კვერთხის სტილიზებული რეპრეზენტაცია - ♄.\n სატურნის პირველი ფოტოსურათი პიონერ 11 -მა 1979 წლის სექტემბერში გადაიღო 20 000 კმ-ის მანძილიდან. მაშინ აგრეთვე მისი რამდენიმე თანამგზავრი აღმოაჩინა და სურათები გადაუღო. ნასას 2016 წლის მონაცემებით სატურნს 82 თანამგზავრი ჰყავს, მათ შორის ყველაზე დიდია ტიტანი. სატურნის ატმოსფეროს 96,3 % წყალბადისგან შედგება, 3,25 % ჰელიუმისგან, დანარჩენი 0,45 % სხვა აირებია."
                     android:textSize="13sp"/>
             </LinearLayout>
 
@@ -160,19 +161,7 @@
 
         </ScrollView>
 
-        <TextView
-            android:id="@+id/button_info"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/bg_footer"
-            android:elevation="10dp"
-            android:fontFamily="@font/poppins_regular"
-            android:gravity="center"
-            android:text="Book Your Ride  >"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            />
+
     </LinearLayout>
 
 

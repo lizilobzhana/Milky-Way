@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_info"
+        android:adjustViewBounds="true"
+        android:scaleY="1.2"
+        android:scaleX="1.2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/planet_img_info"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="40dp"
+            android:src="@drawable/earth"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-50dp"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="60dp">
+                <TextView
+                    android:id="@+id/title_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="დედამიწა"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/galaxy_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="ირმის ნახტომი"
+                    android:textColor="@color/subtext"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#03A9F4"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_distance"/>
+                    <TextView
+                        android:id="@+id/distance_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="149.6 მლნ კმ"
+                        android:textColor="@color/subtext"
+                        android:textSize="14sp"
+                        />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_gravity"/>
+                    <TextView
+                        android:id="@+id/gravity_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="9.807 მ/წ²"
+                        android:textColor="@color/subtext"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="შესახებ"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/white"
+                    />
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#03A9F4"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/overview_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/white"
+                    android:lineSpacingExtra="1dp"
+                    android:text="დედამიწა მზის სისტემაში მზიდან მესამე პლანეტა. იგი უდიდესია დედამიწის ტიპის პლანეტებს შორის და სამყაროში ცნობილი ერთადერთი ადგილია, რომელიც დასახლებულია ცოცხალი არსებებით. დედამიწის ზედაპირის უდიდესი ნაწილი წყალს უკავია, მის გარშემო კი ჰაერის გარსი - ატმოსფეროა. იგი დაახლოებით 4,3 მილიარდი წლის წინ წარმოიქმნა და მალევე შეიძინა თავისი ერთადერთი ბუნებრივი თანამგზავრი მთვარე. აგრეთვე დღემდე აღმოჩენილია რამდენიმე კვაზითანამგზავრი. 2015 წლის ბოლო მონაცემებით დედამიწაზე 7,6 მილიარდი ადამიანი ცხოვრობს.\n დედამიწის ასაკის დადგენა ისეთივე რთული პრობლემაა, როგორც მისი წარმოშობის მექანიზმისა. მეცნიერებმა უკანასკნელი ხუთი ათწლეულის განმავლობაში ფიზიკის მიღწევების გამოყენებით სცადეს ქანების ასაკი დაედგინათ, რისი საშუალებითაც შესაძლებელია დედამიწის ასაკის განსაზღვრაც. გამოანგარიშებულია, რომ დედამიწა დაახლოებით 5, ხოლო ქერქი 4,5 მილიარდი წლის წინ წარმოიქმნა.\n სიცოცხლის არსებობის პირველი ნიშნები დედამიწაზე მხოლოდ 3-3,5 მილიარდი წლის წინ გაჩნდა. მკვლევართა აზრით ჩვენს პლანეტაზე სიცოცხლის გაჩენის ორი გზა არსებობს: კოსმოსური და დედამიწისეული. კოსმოსური გზის მიხედვით სიცოცხლე დედამიწაზე სხვა ციური სხეულებიდან მოხვდა."
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

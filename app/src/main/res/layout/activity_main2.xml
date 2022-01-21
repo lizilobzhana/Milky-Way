@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
-        android:background="@drawable/bg_header"
+        android:background="#FF9800"
         android:id="@+id/bottomNavigationView"
         app:menu="@menu/bottom_navigation_menu"/>
 

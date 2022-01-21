@@ -29,8 +29,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "მარსი",
                 R.drawable.mars,
-                "227.9",
-                "3.721"
+                "227.9 მლნ კმ",
+                "3.721 მ/წ²"
 
         )
         )
@@ -38,8 +38,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "მთვარე",
                 R.drawable.moon,
-                "150.0",
-                "1.62"
+                "150.0 მლნ კმ",
+                "1.62 მ/წ²"
 
             )
         )
@@ -47,16 +47,16 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "ნეპტუნი",
                 R.drawable.neptune,
-                "4497.1",
-                "11.15"
+                "4497.1 მლნ კმ",
+                "11.15 მ/წ²"
             )
         )
         planetList.add(
             Planets(
                 "დედამიწა",
                 R.drawable.earth,
-                "149.6",
-                "9.807"
+                "149.6 მლნ კმ",
+                "9.807 მ/წ²"
 
             )
         )
@@ -64,8 +64,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "ვენერა",
                 R.drawable.venus,
-                "108.2",
-                "8.87",
+                "108.2 მლნ კმ",
+                "8.87 მ/წ²",
 
             )
         )
@@ -73,8 +73,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "ურანი",
                 R.drawable.uranus,
-                "2871.0",
-                "8.87"
+                "2871.0 მლნ კმ",
+                "8.87 მ/წ²"
 
             )
         )
@@ -82,8 +82,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "მზე",
                 R.drawable.sun,
-                "0",
-                "274.0"
+                "0 მლნ კმ",
+                "274.0 მ/წ²"
 
             )
         )
@@ -91,8 +91,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "სატურნი",
                 R.drawable.saturn,
-                "1427.0",
-                "10.44"
+                "1427.0 მლნ კმ",
+                "10.44 მ/წ²"
 
             )
         )
@@ -100,8 +100,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "იუპიტერი",
                 R.drawable.jupiter,
-                "778.3",
-                "24.79"
+                "778.3 მლნ კმ",
+                "24.79 მ/წ²"
 
             )
         )
@@ -109,8 +109,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             Planets(
                 "მერკური",
                 R.drawable.mercury,
-                "57.9",
-                "3.7",
+                "57.9 მლნ კმ",
+                "3.7 მ/წ²",
             )
         )
         return planetList

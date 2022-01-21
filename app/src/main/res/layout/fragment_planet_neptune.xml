@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_info"
+        android:adjustViewBounds="true"
+        android:scaleY="1.2"
+        android:scaleX="1.2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/planet_img_info"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="40dp"
+            android:src="@drawable/neptune"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-50dp"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="60dp">
+                <TextView
+                    android:id="@+id/title_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="ნეპტუნი"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/galaxy_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="ირმის ნახტომი"
+                    android:textColor="@color/subtext"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#03A9F4"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_distance"/>
+                    <TextView
+                        android:id="@+id/distance_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4497.1 მლნ კმ"
+                        android:textColor="@color/subtext"
+                        android:textSize="14sp"
+                        />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_gravity"/>
+                    <TextView
+                        android:id="@+id/gravity_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="11.15 მ/წ²"
+                        android:textColor="@color/subtext"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="შესახებ"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/white"
+                    />
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#03A9F4"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/overview_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/white"
+                    android:lineSpacingExtra="1dp"
+                    android:text="ნეპტუნი სიშორით მერვე პლანეტა მზიდან და ყველაზე შორეული გაზის გიგანტი ჩვენს მზის სისტემაში. ნეპტუნი სიდიდით მესამე პლანეტაა (დიამეტრით მეოთხე). ნეპტუნის ატმოსფერო შედგება 90 % წყალბადისგან, 19 % ჰელიუმისგან და 1 % სხვა აირებისგან. მისი ეკვატორული დიამეტრი 49 500 კმ-ია, ხოლო პოლარული დიამეტრი 48 700 კმ. მზის ირგვლივ ერთ ბრუნს 164 წელს 9 თვეს და 15 დღეს ანდომებს. ნეპტუნს ასევე ახასიათებს 2.100 კმ/სთ სიჩქარის წყალბადის, ჰელიუმისა და მეთანის ქარები, რაც მას ლურჯ შეფერილობას აძლევს. მას 13 თანამგზავრი ჰყავს. მისი უდიდესი თანამგზავრი ტრიტონი გამოირჩევა რეტროგრადული ორბიტით, ექსტრემალურად ცივია -235 °C (38 °K) და მას ექსტრემალურად შეკუმშული ატმოსფერო აქვს.\\n პლანეტას რომაული ღმერთი ნეპტუნის სახელი ჰქვია მისი ლურჯი მეთანის ღრუბლების გამო. მისი ასტრონომიული სიმბოლო ღმერთის სამკაპის ნიშნის სტილიზებული ვერსიაა (♆).\n პლანეტა აღმოჩენილ იქნა 1846 წლის 23 სექტემბერს და დღემდე მას მხოლოდ ერთი ხომალდი ვოიაჯერ 2 ეწვია, რომელმაც მის გასწვრივ 1989 წლის 25 აგვისტოს ჩაიფრინა."
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
