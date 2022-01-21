@@ -20,13 +20,13 @@ class MainActivity2 : AppCompatActivity() {
 
         val navView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
-        val controller = findNavController(R.id.nav_host_main_fragment)
+        val controller = findNavController(R.id.nav_host_main_fragment_1)
 
         val appBarConfig = AppBarConfiguration(
 
             setOf(
-                R.id.planets,
-                R.id.person
+                R.id.mainFragment,
+                R.id.profileFragment
             )
         )
 

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/planets"
-        android:iconTint="@color/white"
+    <item android:id="@+id/mainFragment"
         android:icon="@drawable/ic_baseline_cloud_circle_24"
-        android:title="planets"/>
+        android:iconTint="@color/white"
+        android:title="Planets"/>
 
-    <item android:id="@+id/person"
+    <item android:id="@+id/profileFragment"
         android:iconTint="@color/white"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="Profile"/>
+
+
 
 </menu>
